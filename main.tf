@@ -13,6 +13,11 @@ module "ec2_instance"{
 
 }
 
+module "S3_bucket"{
+    source="./modules/S3_bucket"
+    bucket_value="terraform-123-state"
+}
+
 //"ami-020cba7c55df1f615"
 //"t2.micro"
 //"subnet-067efbd3d08ddb79e"
