@@ -1,5 +1,5 @@
 provider "aws"{
-    region="us=east-1"
+    region="us-east-1"
 }
 
 module "ec2_instance"{
@@ -18,6 +18,12 @@ module "S3_bucket"{
     bucket_value="terraform-123-state"
 }
 
+module "dynamo_db"{
+    source="./modules/dynamo_db"
+    table_name="terraform-lock"
+    billing_mode_value="PAY_PER_REQUEST"
+    hash_key_value="LockID"
+}
 //"ami-020cba7c55df1f615"
 //"t2.micro"
 //"subnet-067efbd3d08ddb79e"
