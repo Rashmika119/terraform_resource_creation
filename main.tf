@@ -9,7 +9,6 @@ module "ec2_instance"{
     subnet_id_value="subnet-067efbd3d08ddb79e"
     key_name_value="terraform-123"
     name_value = "terraform-123-example"
-    
 
 }
 
@@ -24,7 +23,3 @@ module "dynamo_db"{
     billing_mode_value="PAY_PER_REQUEST"
     hash_key_value="LockID"
 }
-//"ami-020cba7c55df1f615"
-//"t2.micro"
-//"subnet-067efbd3d08ddb79e"
-//"terraform-123"
