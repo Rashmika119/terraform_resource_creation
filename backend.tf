@@ -3,7 +3,7 @@ terraform {
     bucket = "terraform-123-state"
     key    = "rash/terraform.tfstate"
     region = "us-east-1"
-    encryp=true
+    encrypt=true
     dynamodb_table="terraform-lock"
   }
 }
