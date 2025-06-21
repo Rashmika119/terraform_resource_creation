@@ -1,5 +1,6 @@
 
 resource "aws_security_group" "web_sec_grp_terraform_123"{
+    name="web"
     vpc_id=var.vpc_id
 
     ingress{
